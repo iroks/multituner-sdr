@@ -21,7 +21,7 @@ or
 
 - 30 x Zero-IF tuner with IQ output and audio ADC with I2S output per USB port; multiple USB ports can be synchronised together on host. Technology is tested for a single segment with sample rates up to 768 kHz per ADC (multiple segement were tested on host without multiple USB ports synchronisation);   
     
-- RF broadcast tuners, e.g. SI468x with I2S output; tested successfully, 31+ channels per USB port possible; 
+- RF broadcast tuners, e.g. SI468x with I2S output; tested successfully, 31+ stereo channels per USB port possible; 
 
 - Use multichannel audio ADCs that will increase the number of channels (TDM, not tested, just an idea);
 
