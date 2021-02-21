@@ -13,7 +13,9 @@ The hardware example of 2 tuners (R820T2) x 14 bit can be found in this reposito
 
 It is possible to develop following configurations (all signals are synchronized with a common clock and acquired on host synchronised and interleaved per USB port):
 
-    2 x 30 microphones with I2S output per USB port; multiple USB ports can be synchronised together on host. Technology is tested for a single segment (multiple segment were tested on host without multiple USB ports synchronisation);
+    2 x 30 microphones with I2S output per USB port; 
+    multiple USB ports can be synchronised together on host; 
+    technology is tested for a single segment (multiple segment were tested on host without multiple USB ports synchronisation);
 
 or
 
