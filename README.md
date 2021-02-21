@@ -17,7 +17,7 @@ It is possible to develop following configurations (all signals are synchronized
 
 or
 
--30 x 32-bit stereo ADCs with I2S output per USB port, multiple USB ports can be synchronised together on host. Technology is tested for a single segment with sample rates up to 768 kHz per ADC (multiple segement were tested on host without multiple USB ports synchronisation);
+- 30 x 32-bit stereo ADCs with I2S output per USB port, multiple USB ports can be synchronised together on host. Technology is tested for a single segment with sample rates up to 768 kHz per ADC (multiple segement were tested on host without multiple USB ports synchronisation);
 
 - 30 x Zero-IF tuner with IQ output and audio ADC with I2S output per USB port; multiple USB ports can be synchronised together on host. Technology is tested for a single segment with sample rates up to 768 kHz per ADC (multiple segement were tested on host without multiple USB ports synchronisation);   
     
