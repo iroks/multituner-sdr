@@ -9,7 +9,7 @@ Please contact us by E-Mail info#at#coherent-receiver.com or https://coherent-re
     4 tuners x 8 bit or
     2 tuners x 8-16 bit
 
-The hardware example of 2 tuners (R820T2) x 14 bit can be found in this repository (https://github.com/iroks/multituner-sdr), see also https://coherent-receiver.com/products/coherent-receivers/1-supervisory-and-4-coherent-channels (section - single board mutituner receivers). All samples are acquired simultaneously and sent to host interleaved. It is also possible to synchronise multiple USB ports.
+The hardware example of 2 tuners (R820T2) x 14 bit can be found in this repository (https://github.com/iroks/multituner-sdr), see alsohttps://coherent-receiver.com/fx3-multituner (section - single board mutituner receivers). All samples are acquired simultaneously and sent to host interleaved. It is also possible to synchronise multiple USB ports.
 
 It is possible to develop following configurations (all signals are synchronized with a common clock and acquired on host synchronised and interleaved per USB port):
 
