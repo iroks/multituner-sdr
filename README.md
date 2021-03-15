@@ -9,7 +9,7 @@ Please contact us by E-Mail info#at#coherent-receiver.com or https://coherent-re
     4 tuners x 8 bit or
     2 tuners x 8-16 bit
 
-The hardware example of 2 tuners (R820T2) x 14 bit can be found in this repository (https://github.com/iroks/multituner-sdr), see https://coherent-receiver.com/fx3-multituner (section - single board mutituner receivers). This disclosed implementation is based on FX3 development board (EZ-USB FX3 Software Development Kit, costs ~45 EUR) but we also have developed a CYUSB3014BZXC integrated version. 
+The hardware example of 2 tuners (R820T2) x 14 bit can be found in this repository (https://github.com/iroks/multituner-sdr), see https://coherent-receiver.com/fx3-multituner (section - single board multituner receivers). This disclosed implementation is based on FX3 development board (EZ-USB FX3 Software Development Kit, costs ~45 EUR) but we also have developed a CYUSB3014BZXC integrated version. 
 
 FX3 supports ADC sampling rates up to 100 MHz (or up to 120 MHz out of spec). Therefore, ~200 MHz spectrum can be observed by 4 * 50 MHz tuners/mixers and can be used for scenarios: 
 - bandwidth aggregation for continuous/non-continuous spectrum, 
