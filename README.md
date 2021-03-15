@@ -13,10 +13,9 @@ The hardware example of 2 tuners (R820T2) x 14 bit can be found in this reposito
 
 FX3 supports ADC sampling rates up to 100 MHz (or up to 120 MHz out of spec). Therefore, ~200 MHz spectrum can be observed by 4 * 50 MHz tuners/mixers and can be used for scenarios: 
 - bandwidth aggregation for continuous/non-continuous spectrum, 
-- signal decoding improvements or 
 - synchronized receiving on different frequencies, e.g. for frequency hopping decoding.
 
-All samples are acquired simultaneously and sent to host interleaved. Therefore, this device can also be used for DF, DoA, passive radars or just basic beamforming experiments. 
+All samples are acquired simultaneously and sent to host interleaved. Therefore, this device can also be used for signal decoding improvements, DF, DOA, passive radars or just  beamforming experiments. 
 
 It is also possible to synchronise multiple USB ports.
 
