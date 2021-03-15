@@ -9,24 +9,15 @@ Please contact us by E-Mail info#at#coherent-receiver.com or https://coherent-re
     4 tuners x 8 bit or
     2 tuners x 8-16 bit
 
-The hardware example of 2 tuners (R820T2) x 14 bit can be found in this repository (https://github.com/iroks/multituner-sdr), see alsohttps://coherent-receiver.com/fx3-multituner (section - single board mutituner receivers). All samples are acquired simultaneously and sent to host interleaved. It is also possible to synchronise multiple USB ports.
+The hardware example of 2 tuners (R820T2) x 14 bit can be found in this repository (https://github.com/iroks/multituner-sdr), see https://coherent-receiver.com/fx3-multituner (section - single board mutituner receivers). This disclosed implementation is based on FX3 development board (EZ-USB FX3 Software Development Kit, costs ~45 EUR) but we also have developed a CYUSB3014BZXC integrated version. 
 
-It is possible to develop following configurations (all signals are synchronized with a common clock and acquired on host synchronised and interleaved per USB port):
+FX3 supports ADC sampling rates up to 100 MHz (or up to 120 MHz out of spec). Therefore, ~200 MHz spectrum can be observed by 4 * 50 MHz tuners/mixers and can be used for scenarios: 
+- bandwidth aggregation for continuous/non-continuous spectrum, 
+- signal decoding improvements or 
+- synchronized receiving on different frequencies, e.g. for frequency hopping decoding.
 
-- 2 x 30 microphones with I2S output per USB port; multiple USB ports can be synchronised together on host; technology is tested for a single segment (multiple segment were tested on host without multiple USB ports synchronisation);
+All samples are acquired simultaneously and sent to host interleaved. Therefore, this device can also be used for DF, DoA, passive radars or just basic beamforming experiments. 
 
-or
+It is also possible to synchronise multiple USB ports.
 
-- 30 x 32-bit stereo ADCs with I2S output per USB port, multiple USB ports can be synchronised together on host. Technology is tested for a single segment with sample rates up to 768 kHz per ADC (multiple segement were tested on host without multiple USB ports synchronisation);
-
-- 30 x Zero-IF tuner with IQ output and audio ADC with I2S output per USB port; multiple USB ports can be synchronised together on host. Technology is tested for a single segment with sample rates up to 768 kHz per ADC (multiple segement were tested on host without multiple USB ports synchronisation);   
-    
-- RF broadcast tuners, e.g. SI468x with I2S output; tested successfully, 31+ stereo channels per USB port possible; 
-
-- Use multichannel audio ADCs that will increase the number of channels (TDM, not tested, just an idea);
-
-- RF tuners STA709, STA710, TDA7707, TDA7708, Si476x, Si479x or LV25810PEB provide digital I/Q-output via I2S. Typical such chips support about 500 kHz BW signal for further signal processing. 30 such chips can be connected per USB port; multiple USB ports can be synchronised on host. Not tested due to lack of documentations and chips (discussed with both companies behind the tuners; no interest) but should theoretically work;
-
-- 30 x RF tuners/frontends per USB and non-audio ADC, not tested, theoretically possible to get 30 x R820T2 (or 15 alternative tuners with IQ output) per USB port; idea for future FX3 generation due to speed requirements or an alternative controller/bus is necessary)
-    
-Are there any additional features that anyone requests? Please let us know in the comments and many thanks in advance for your feedback!
+Are there any additional features that anyone requests? Please let us know in the comments and many thanks in advance for your feedback!  
